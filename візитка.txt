@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manager's Business Card</title>
+<style>
+  body {
+    background-color: #f0fff0; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  }
+  .container {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  h1, p {
+    text-align: center;
+    color: #333333; 
+  }
+  .role {
+    text-align: center;
+    color: #808080; 
+    font-style: italic;
+    margin-top: 5px;
+  }
+  form {
+    margin-top: 20px;
+    text-align: center;
+  }
+  input[type="text"], input[type="submit"] {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  input[type="submit"] {
+    background-color: #7FFFD4; 
+    color: #000000; 
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="center">
+  <div class="container">
+    <h1>Kashperskyi Myroslav</h1>
+    <p>+38 073 0082 0002</p>
+    <p>xxxkasperonexxx@gmail.com</p>
+    <p class="role">Developer</p>
+
+    <form action="submit.php" method="POST">
+      <label for="message">Send me a message:</label><br>
+      <input type="text" id="message" name="message" placeholder="Your message"><br>
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
